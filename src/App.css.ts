@@ -1,6 +1,6 @@
-import { createGlobalTheme } from "@vanilla-extract/css";
+import { createGlobalTheme, style } from "@vanilla-extract/css";
 
-export const vars createGlobalTheme(":root", {
+export const vars = createGlobalTheme(":root", {
     color:{
         main: "#ffa726",
         mainDarker: "#f57c00",
@@ -10,9 +10,9 @@ export const vars createGlobalTheme(":root", {
         task: "rgb(255, 255, 255)",
         taskHover: "rgb(245, 245, 245)",
         brightText: "rgb(255, 255, 255)",
-        darkRet: "rgb(24, 42, 77)"
+        darkText: "rgb(24, 42, 77)",
         secondaryDarkText: "rgb(94, 108, 132)",
-        secondaryDarkTextHover: "rgb(218, 219, 226)"
+        secondaryDarkTextHover: "rgb(218, 219, 226)",
         selectedTab: "rgb(137, 176, 174)",
         updateButton: "rgb(237, 180, 88)",
         deleteButton: "rgb(237, 51, 88)"
@@ -26,7 +26,7 @@ export const vars createGlobalTheme(":root", {
     },
     spacing: {
         small: "5px",
-        midium: "10px",
+        medium: "10px",
         big1: "20px",
         big2: "15px",
         listSpacing: "30px" 

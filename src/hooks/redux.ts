@@ -1,8 +1,8 @@
 import{ useDispatch, type TypedUseSelectorHook } from 'react-redux';
 import { useSelector } from 'react-redux';
-import { AppDispatch, RootState } from '../store';
+import type { AppDispatch, RootState } from '../store'; // 왜 나는 type을 넣어야하지?
 
-export const useTypedSelector:TypedUseSelectorHook<RootState>= useSelector;
+export const useTypedSelector: TypedUseSelectorHook<RootState> = useSelector;
 export const useTypedDispatch = () => useDispatch<AppDispatch>();
 
 
