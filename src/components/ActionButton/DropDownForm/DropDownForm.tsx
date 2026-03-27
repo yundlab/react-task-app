@@ -1,10 +1,11 @@
-import React, { FC, useState, type ChangeEvent } from 'react'
+import { useState } from 'react';
+import type { FC, ChangeEvent } from 'react';
 import { FiX } from 'react-icons/fi';
 import { useTypedDispatch } from '../../../hooks/redux';
 import { v4 } from 'uuid';
 import { addList, addTask } from '../../../store/slices/boardsSlice';
 import { addLog } from '../../../store/slices/loggerSlice';
-import { button, buttons, input, listForm, taskForm } from './DropDownForm.css';
+import { button, buttons, close, input, listForm, taskForm } from './DropDownForm.css';
 
 type TDropDownFormProps ={
   boardId: string,

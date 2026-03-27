@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import { useState } from 'react';
+import type { ChangeEvent } from 'react';
 import { FiX } from 'react-icons/fi'
 import { useTypedDispatch, useTypedSelector } from '../../hooks/redux'
-import { BsListNested, BsSymmetryHorizontal } from 'react-icons/bs';
+
 import { deleteTask, setModalActive, updateTask } from '../../store/slices/boardsSlice';
-import { setModalData } from '../../store/slices/modalSlice';
+
 import { addLog } from '../../store/slices/loggerSlice';
 import { v4 } from 'uuid';
 import { buttons, deleteButton, header, title, input, modalWindow, updateButton, wrapper, closeButton } from './EditModal.css';
@@ -33,7 +34,7 @@ const EditModal = () => {
       ...data,
       task: {
         ...data.task,
-        taskDescription: e.target.Value
+        taskDescription: e.target.value
       }
     })
   }
